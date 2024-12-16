@@ -59,7 +59,7 @@ const NoteForm: FC<INoteForm> = ({
         value={title}
         placeholder="Title"
         onChange={handleChange}
-        className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-blue-500 transition duration-200"
+        className="input"
         required
       />
       <textarea
@@ -73,7 +73,7 @@ const NoteForm: FC<INoteForm> = ({
       />
       <button
         type="submit"
-        className="w-full bg-blue-500 text-white rounded-lg p-3 hover:bg-blue-600 transition duration-200"
+        className="btn btn--primary w-full transition duration-200"
       >
         {currentNote ? "Update Todo" : "Add Todo"}
       </button>
