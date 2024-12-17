@@ -18,7 +18,7 @@ const notesSlice = createSlice({
     },
     deleteNote: (state, action: PayloadAction<string>) => {
       state.notes = state.notes.filter(
-        (note: Note) => note.id === action.payload,
+        (note: Note) => note.id !== action.payload,
       );
     },
   },
